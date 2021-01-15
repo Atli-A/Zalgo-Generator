@@ -1,17 +1,31 @@
 let zalgoList = ["&#771", "&#772", "&#770", "&#773", "&#774", "&#775", "&#817", "&#863"];
 let inpt;
 let slideVal;
+let slider = document.getElementById("slide")
+let inputBox = document.getElementById("inputArea")
 
 
-function editOutpt() {
-  if (document.getElementById("inputArea").value != inpt || document.getElementById("slide").value != slideVal) {
-    inpt = document.getElementById("inputArea").value;
-    slideVal = document.getElementById("slide").value;
-    //console.log(inpt);
+slider.addEventListener("input", function() {
+  addZalgo(document.getElementById("inputArea").value)
+})
 
-    document.getElementById("outputArea").innerHTML = addZalgo(inpt);
-  }
-}
+inoutBox.addEventListener("change", function() {
+  addZalgo(document.getElementById("inputArea").value)
+})
+
+
+// inpt = document.getElementById("inputArea").value;
+// slideVal = document.getElementById("slide").value;
+
+// function editOutpt() {
+//   if (document.getElementById("inputArea").value != inpt || document.getElementById("slide").value != slideVal) {
+//     inpt = document.getElementById("inputArea").value;
+//     slideVal = document.getElementById("slide").value;
+//     //console.log(inpt);
+
+//     document.getElementById("outputArea").innerHTML = addZalgo(inpt);
+//   }
+// }
 
 function addZalgo(inptVal) {
   let s = inptVal;
@@ -27,9 +41,9 @@ function addZalgo(inptVal) {
   return finalString;
 }
 
-function loop() {
-  editOutpt();
-  setTimeout(loop, 30);
-}
+// function loop() {
+//   editOutpt();
+//   setTimeout(loop, 30);
+// }
 
-loop();
+// loop();
