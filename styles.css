@@ -1,7 +1,9 @@
 body {
+    padding: none;
     font-family: 'Courier New', Courier, monospace;
     outline: none;
     background-color: #333333;
+    margin: 0px;
 }
 
 #center {
@@ -16,7 +18,8 @@ body {
 }
 
 #inputArea {
-    width: 40%;
+    padding: 20px;
+    width: 30%;
     height: 100px;
     display: block;
     border-radius: 10px;
@@ -35,8 +38,9 @@ body {
 }
 
 #outputArea {
+    padding: 20px;
     margin-left: 19.2%;
-    width: 40%;
+    width: 30%;
     height: 100px;
     display: block;
     border-radius: 10px;
@@ -44,7 +48,7 @@ body {
     border: 1px;
     resize: none;
     display: inline;
-    float: left;
+    float: right;
     
 
 

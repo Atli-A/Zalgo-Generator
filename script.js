@@ -1,6 +1,8 @@
 let zalgoList = ["&#771", "&#772", "&#770", "&#773", "&#774", "&#775", "&#817", "&#863"];
 let inpt;
 let slideVal;
+
+
 function editOutpt() {
   if (document.getElementById("inputArea").value != inpt || document.getElementById("slide").value != slideVal) {
     inpt = document.getElementById("inputArea").value;
