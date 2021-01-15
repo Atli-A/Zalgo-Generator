@@ -7,28 +7,33 @@ body {
 }
 
 #center {
-    margin-top: 30px; 
+    margin-top: 10%; 
     margin-right: 5%;
     margin-left: 5%;
+    display: inline;
 
 }
 
+.inline {
+    display: block;
+}
+
 .display {
-    
+    /* width: 100%; */
+    width: calc(50% - 5.5%);
+    display: inline-flex;
+    color: white;
 }
 
 #inputArea {
     padding: 20px;
-    width: 30%;
     height: 100px;
-    display: block;
+    display: inline;
     border-radius: 10px;
     outline: none;
     border: 1px;
     resize: none;
-    display: inline;
-    float: left;
-
+    width: 100%;
 }
 
 #slide {
@@ -39,17 +44,13 @@ body {
 
 #outputArea {
     padding: 20px;
-    margin-left: 19.2%;
-    width: 30%;
     height: 100px;
-    display: block;
     border-radius: 10px;
     outline: none;
     border: 1px;
-    resize: none;
     display: inline;
-    float: right;
-    
+    resize: none;
+    width: 100%;
 
 
 }
