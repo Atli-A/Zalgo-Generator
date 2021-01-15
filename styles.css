@@ -7,34 +7,45 @@ body {
 }
 
 #center {
-    margin-top: 10%; 
+    margin-top: 10%;
     margin-right: 5%;
     margin-left: 5%;
+    width: auto;
     display: inline;
 
 }
 
-.inline {
+textarea {
+    padding: 20px;
+    height: 100px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px;
+    display: block;
+
+    resize: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+
+.text {
+    width: 100%;
     display: block;
 }
 
 .display {
     /* width: 100%; */
     width: calc(50% - 5.5%);
-    display: inline-flex;
+    display: inline-block;
     color: white;
 }
 
-#inputArea {
-    padding: 20px;
-    height: 100px;
-    display: inline;
-    border-radius: 10px;
-    outline: none;
-    border: 1px;
-    resize: none;
-    width: 100%;
-}
+#inputArea {}
 
 #slide {
     width: 90%;
@@ -42,23 +53,13 @@ body {
     margin-top: 30px;
 }
 
-#outputArea {
-    padding: 20px;
-    height: 100px;
-    border-radius: 10px;
-    outline: none;
-    border: 1px;
-    display: inline;
-    resize: none;
-    width: 100%;
-
-
-}
+#outputArea {}
 
 #header {
+    margin-bottom: 50px;
     text-align: center;
     padding: 20px;
     color: white;
     background-color: teal;
-    
+
 }
