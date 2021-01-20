@@ -1,8 +1,20 @@
+
+
+/*define unctions */
+
+function copyToClipboard(id) {
+    id.select();
+    id.setSelectionRange(0, 99999); /* for mobile */
+    document.execCommand("copy");
+
+
+}
 let zalgoList = ["&#771", "&#772", "&#770", "&#773", "&#774", "&#775", "&#817", "&#863"];
 
 let slider = document.getElementById("slide")
 let inputBox = document.getElementById("inputArea")
 let outputBox = document.getElementById("outputArea")
+let copyButton = document.getElementById("copy")
 
 slider.addEventListener("input", function () {
     outputArea.innerHTML = getZalgo(document.getElementById("inputArea").value)
@@ -11,6 +23,10 @@ slider.addEventListener("input", function () {
 inputBox.addEventListener("input", function () {
     outputArea.innerHTML = getZalgo(document.getElementById("inputArea").value)
 })
+
+copyButton.onClick = copyToClipboard(outputBox)
+
+
 
 
 // inpt = document.getElementById("inputArea").value;
