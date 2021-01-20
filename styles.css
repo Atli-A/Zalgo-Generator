@@ -2,14 +2,25 @@ body {
     padding: none;
     font-family: 'Courier New', Courier, monospace;
     outline: none;
+    color: white;
     background-color: #333333;
     margin: 0px;
 }
 
+
+#header {
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #222;
+
+}
 #center {
     margin-top: 10%;
     margin-right: 5%;
     margin-left: 5%;
+    margin-bottom: 30px;
     width: auto;
     display: inline;
 
@@ -43,23 +54,23 @@ textarea {
     width: calc(50% - 5.5%);
     display: inline-block;
     color: white;
+    margin-bottom: 50px;
 }
 
-#inputArea {}
+.inline {
+    margin: auto;
+    display: inline;
+}
+
+#craziness {
+    margin-left: 5%;
+}
+
 
 #slide {
-    width: 90%;
+    display: inline;
+    width: calc(72.3%);
     margin-left: 5%;
     margin-top: 30px;
-}
-
-#outputArea {}
-
-#header {
-    margin-bottom: 50px;
-    text-align: center;
-    padding: 20px;
-    color: white;
-    background-color: teal;
-
+    margin-right: 5%;
 }

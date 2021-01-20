@@ -5,7 +5,7 @@ let inputBox = document.getElementById("inputArea")
 let outputBox = document.getElementById("outputArea")
 
 slider.addEventListener("input", function () {
-    getZalgo(document.getElementById("inputArea").value)
+    outputArea.innerHTML = getZalgo(document.getElementById("inputArea").value)
 })
 
 inputBox.addEventListener("input", function () {
