@@ -68,8 +68,8 @@ textarea {
 
 
 #slide {
+    width: calc(85% - 173px);
     display: inline;
-    width: calc(72.3%);
     margin-left: 5%;
     margin-top: 30px;
     margin-right: 5%;
