@@ -1,14 +1,21 @@
 
 
-/*define unctions */
+/*define functions */
 
 function copyToClipboard(id) {
-    id.select();
-    id.setSelectionRange(0, 99999); /* for mobile */
-    document.execCommand("copy");
+    let idText = id.textContent;
+    navigator.clipboard.writeText(idText);
+
+    console.log(id)
 
 
 }
+
+
+
+
+/* define global vars */
+
 let zalgoList = ["&#771", "&#772", "&#770", "&#773", "&#774", "&#775", "&#817", "&#863"];
 
 let slider = document.getElementById("slide")
@@ -24,7 +31,9 @@ inputBox.addEventListener("input", function () {
     outputArea.innerHTML = getZalgo(document.getElementById("inputArea").value)
 })
 
-copyButton.onClick = copyToClipboard(outputBox)
+copyButton.addEventListener("click", function () { copyToClipboard(outputBox) })
+
+// copyButton.onClick = copyToClipboard(outputBox)
 
 
 
