@@ -8,6 +8,7 @@ function copyToClipboard(id) {
 
     console.log(id)
 
+    // alert("test")
 
 }
 
